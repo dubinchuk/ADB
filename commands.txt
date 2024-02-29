@@ -1,0 +1,7 @@
+./adb devices
+./adb install /e/platform-tools/apk/todolist/todolist.apk
+./adb shell pm list packages | grep todolist
+./adb exec-out screencap -p > /e/platform-tools/apk/todolist/screenshots/test.png
+./adb logcat | grep com.android.todolist
+./adb logcat | grep com.android.todolist > /e/platform-tools/apk/todolist/logs/todolist.log
+./adb uninstall com.android.todolist
