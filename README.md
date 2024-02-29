@@ -24,7 +24,7 @@
 
 6. Скопировать логи приложения todolist на компьютер.
 ```
-./adb logcat | grep com.android.todolist > /e/platform-tools/apk/todolist/logs/logs.txt
+./adb logcat | grep com.android.todolist > /e/platform-tools/apk/todolist/logs/todolist.log
 ```
 Выход: `Ctrl + C`  
 
